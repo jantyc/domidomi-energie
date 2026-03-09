@@ -1,0 +1,355 @@
+Jasně — tady máš **přepracovaný ULTIMATE prompt pro Figma Make** tak, aby měl:
+
+* **maximální completion rate formuláře** (nejnižší friction, nejvyšší dokončení)
+* **ultimate UX / CRO** (sticky CTA, progressive disclosure, mikrocopy, validace, důvěra)
+* **UI styl velmi blízký referenci z obrázku** (moderní, čistý, „marketplace partner“ look), ale pořád **maximálně konverzní**
+* a zároveň **nic nevypadlo z původního zadání** (všechno tam je)
+
+> Tip: Vlož to do Figma Make jako jeden prompt. Pokud Figma umí “reference image”, přilož k promptu i ten screenshot a napiš “use as visual inspiration”.
+
+---
+
+# 🔥 ULTIMATE FIGMA MAKE PROMPT (MAX COMPLETION + ULTIMATE UX + UI INSPIRED BY REFERENCE)
+
+Navrhni **kompletní design + klikací prototyp** moderní **landing page (one-pager)** pro firmu **DOMIDOMI Energie**.
+
+## Co musí být součást výstupu
+
+* plně navržená **landing page**
+* **design system** (tokens + typografie + grid + komponenty)
+* **komponentový systém** (variants, states, responsive variants)
+* **desktop + mobile + tablet**
+* **klikací prototyp** (scroll, anchor nav, otevření formuláře, přepínání segmentů FO/FOP/PO, multi-step kalkulačka, sticky CTA)
+* připravené pro **snadnou implementaci** (např. Next.js / Tailwind; konzistentní spacing, komponenty, auto-layout)
+
+## Kontext značky (nesmí se ztratit)
+
+**DOMIDOMI Energie** je odnož obchodní značky **DOMIDOMI**.
+DOMIDOMI je partner pro **bezstarostnou domácnost** (marketplace / síť firem) pro bezstarostné a udržitelné bydlení: **fotovoltaika, tepelná čerpadla, energie, rekonstrukce domů a bytů, renovace (zateplení, okna, dveře), servis, dotační poradenství, financování…** a další. (ekosystém domidomi.cz)
+
+DOMIDOMI Energie je **zprostředkovatel výhodných fixovaných cen energií** pro 3 segmenty:
+
+1. **FO** (fyzické osoby)
+2. **FOP** (podnikatelé)
+3. **PO** (právnické osoby)
+
+## Hlavní účel webu
+
+Web musí být **prezentace + konverze v jednom** s **maximálním důrazem na konverzi** a “odvyprávěním příběhu” v souladu s brandem.
+Primární konverze: **Nechat si připravit nabídku energií**.
+
+---
+
+## UI / Vizuální směr (INSPIRACE REFERENCÍ Z OBRÁZKU — detailní specifikace)
+
+Vytvoř UI inspirované dodaným screenshotem (ber jako **vizuální referenci**, ne kopii). Styl musí být **moderní marketplace/partner landing page**, velmi přehledný, profesionální, důvěryhodný:
+
+### Klíčové rysy vzhledu
+
+* **Hero**: velký “image-led” blok s fotkou domu (nebo clean ilustrací domu) + tmavý gradient overlay pro čitelnost textu
+* **Kontrastní primární akcent** (doporučeně červená / korálová jako “action color”), sekundární neutrály (šedá, bílá, antracit)
+* **Zaoblené rohy** (12–16px), “soft shadow” karty, čisté hrany
+* **Card-first layout**: sekce jsou skládány z karet a modulů (jako v referenci)
+* **Sticky header** s CTA vpravo
+* **Mikro-badge styl** (pill/badges) pro důvěru: “Zdarma”, “Nezávazně”, “Do 24 hodin”
+* **Ikony**: jednoduché line / duotone, konzistentní tloušťka
+* **Fotografie**: čisté, moderní, “home improvement / energy” vibe
+* **Whitespace a rytmus**: velké mezery, jasná hierarchie, čitelná typografie
+
+### Typografie (nastav v design systemu)
+
+* Použij moderní sans (např. Inter / Manrope / Satoshi style).
+* H1: 44–56 / semibold
+* H2: 28–36 / semibold
+* Body: 16–18 / regular
+* Microcopy: 12–14 / regular/medium
+* Důraz na čitelnost, krátké řádky, silná hierarchie.
+
+### Barevné tokeny (definuj v design systemu)
+
+* Primary (CTA): výrazný akcent (červená/korálová)
+* Primary hover/active
+* Secondary (tmavý background pro hero / sekce)
+* Neutral 0–900 (bílá až antracit)
+* Success / Warning (pro validaci a upozornění)
+* Border color (jemná šedá)
+* Shadow tokeny (2–3 úrovně)
+
+### Tlačítka a form (konverzní styl)
+
+* Primární CTA: výrazná, plná, velká, s ikonou šipky
+* Sekundární CTA: outline nebo ghost
+* Inputs: velké, jasné labely, helper text, error state, success state
+* Zaoblení consistent s kartami
+
+---
+
+## CRO & “MAX COMPLETION RATE” UX pravidla (zásadní)
+
+Navrhni stránku tak, aby maximalizovala dokončení formuláře a konverzi:
+
+### 1) Minimal friction
+
+* Preferuj **multi-step formulář** místo dlouhého (progressive disclosure)
+* Každý krok max 2–3 pole
+* Jasný progress (“Krok 1/3”) + uklidňující text “Zabere to ~2 min”
+* Inline validace + chyby napsat lidsky
+
+### 2) Důvěra v každém kroku
+
+* U formuláře vždy: “Zdarma a nezávazně”, “Bez spamu”, “Ozveme se do 24 hodin”
+* Trust badges a mini-statistiky (bez konkrétních čísel, pokud nejsou daná) — použij placeholdery, které lze snadno nahradit
+
+### 3) Sticky CTA pattern (Stripe-style)
+
+* Sticky bar při scrollu: “Získat nabídku” + zkrácený vstup (např. segment + energie)
+* Na mobilu sticky bottom bar s CTA
+
+### 4) Segmentace FO/FOP/PO
+
+* Segment volba je **viditelná hned v heru** (tabs/chips)
+* Přepnutí segmentu mění mikrocopy a benefity (ale layout zůstává konzistentní)
+
+### 5) Redukce rozhodování
+
+* Nabídni volby jako chips (Elektřina / Plyn / Obojí)
+* Spotřeba volitelně: “Nevím spotřebu” → nabídnout alternativu (typ domácnosti / velikost / jistič)
+
+---
+
+## IA / Struktura stránky (HIGH-CONVERSION SaaS best practices)
+
+Použij tuto strukturu (musí být dodržena) a navrhni ji “card-first” stylem jako reference:
+
+1. **Header** (sticky)
+2. **Hero + mini kalkulačka**
+3. **Trust bar / social proof**
+4. **Value proposition**
+5. **Jak to funguje (3 kroky)**
+6. **Segmenty (FO/FOP/PO)**
+7. **Benefity (cards)**
+8. **Hlavní konverzní blok: Multi-step kalkulačka / formulář**
+9. **Ekosystém DOMIDOMI (propojení na bezstarostnou domácnost)**
+10. **Reference / důvěra (testimonials + stats + partner logos)**
+11. **FAQ**
+12. **Final CTA**
+13. **Footer + povinné dokumenty**
+
+---
+
+## Wireframe specifikace (Ultimate UX – detaily)
+
+### 1) Header (sticky)
+
+* Vlevo logo DOMIDOMI Energie
+* Menu anchor: Jak to funguje, Pro koho, Výhody, FAQ, Kontakt
+* Vpravo CTA button: **Získat nabídku**
+* Při scrollu zmenši header + CTA zůstává
+
+### 2) Hero (image-led jako reference)
+
+**Headline (H1):** Fixované ceny energií bez starostí
+**Subheadline:** Pomůžeme vám získat výhodnou fixaci elektřiny nebo plynu. Jednoduše, přehledně a bez zbytečné administrativy.
+**Primary CTA:** Získat nabídku
+**Secondary CTA:** Jak to funguje
+**Trust microcopy pills:** Zdarma a nezávazně • Nabídka do 24 hodin • Ověření partneři
+
+**Hero mini kalkulačka (pro completion):**
+
+* Segment tabs: FO / FOP / PO
+* Chips: Elektřina / Plyn / Obojí
+* Pole: PSČ
+* Pole: Spotřeba (volitelné) + “Nevím spotřebu”
+* CTA: **Zjistit nabídku**
+* Pod CTA: “Bez spamu. Ozveme se do 24 hodin.”
+
+### 3) Trust bar
+
+* Loga partnerů (placeholder) + “Součást ekosystému DOMIDOMI”
+* 3 trust claimy jako malé karty
+
+### 4) Value proposition
+
+Headline: **Výhodné energie bez složitého hledání**
+Text: Trh s energiemi je nepřehledný. My pro vás vyjednáme výhodné podmínky a pomůžeme vám vybrat nabídku, která dává smysl.
+Doplnit 3–4 value bullets (krátké, ikonky)
+
+### 5) Jak to funguje (3 kroky)
+
+1. Zadáte základní informace
+2. Připravíme nabídku
+3. Vyberete nejlepší řešení
+   Každý krok jako karta + krátká věta + ikonka
+
+### 6) Segmenty (FO/FOP/PO) – velmi přehledně
+
+3 karty se stejnou výškou:
+
+* **Domácnosti (FO)**: Fixace energií pro byty a rodinné domy. CTA “Pro domácnost”
+* **Podnikatelé (FOP)**: Energie pro živnostníky. CTA “Pro podnikatele”
+* **Firmy (PO)**: Individuální nabídky pro společnosti. CTA “Pro firmy”
+
+### 7) Benefity (cards)
+
+Použij benefity (musí být zahrnuty):
+
+* výhodné fixované ceny
+* spolupráce s ověřenými dodavateli
+* přehledné nabídky
+* minimum administrativy
+* odborné poradenství
+
+### 8) Hlavní konverzní blok (Multi-step “AI kalkulačka energií”)
+
+Navrhni jako výrazný modul (sekce s tmavým/kontrastním pozadím nebo výraznou kartou).
+**Kroky (progressive):**
+
+* Krok 1: Segment (FO/FOP/PO)
+* Krok 2: Energie (elektřina/plyn/obojí)
+* Krok 3: Spotřeba (nebo “nevím” → alternativní dotaz: velikost domácnosti / jistič)
+* Krok 4: PSČ
+* Krok 5: Kontakt (email + telefon) + checkbox souhlasu (GDPR)
+
+**Výsledek před kontaktem:**
+Ukázat odhad úspory jako motivátor (placeholder text):
+“Vaše domácnost může ušetřit až X Kč ročně.”
+
+* “Pro přesnou nabídku doplňte kontakt.”
+
+CTA na konci: **Nechat si připravit nabídku**
+Pod CTA microcopy: “Zdarma a nezávazně. Bez spamu.”
+
+### 9) Ekosystém DOMIDOMI (příběh)
+
+Headline: **Partner pro bezstarostnou domácnost**
+Text: DOMIDOMI propojuje služby, které vám pomohou vytvořit moderní a udržitelnou domácnost.
+Grid karet: fotovoltaika, tepelná čerpadla, rekonstrukce, dotace, servis, financování (a další dle potřeby)
+
+### 10) Reference / Důvěra
+
+* Testimonials karty (placeholder jména/firmy)
+* Stat bloky (placeholder hodnot)
+* Partner logos (placeholder)
+* Vše navrhnout důvěryhodně, čistě
+
+### 11) FAQ
+
+4–8 otázek (použij tyto):
+
+* Jak funguje fixace energií?
+* Kolik služba stojí?
+* Jak rychle dostanu nabídku?
+* S jakými dodavateli spolupracujete?
+
+### 12) Final CTA
+
+Headline: **Zjistěte, kolik můžete ušetřit na energiích**
+CTA: **Získat nabídku zdarma**
+Sekundárně: “Zabere to 2 min” + “Bez spamu”
+
+### 13) Footer (musí obsahovat povinné dokumenty)
+
+Footer musí obsahovat:
+
+* O DOMIDOMI Energie
+* DOMIDOMI ekosystém
+* Kontakt
+
+A zároveň povinné dokumenty (samostatné textové podstránky / modální stránky v prototypu):
+
+* **Etický kodex**
+* **GDPR**
+* **Informace o zprostředkovateli**
+* **Reklamační řád**
+
+Pozn.: Tyto dokumenty budou později dodány do Cursor.ai k vývoji, ale v návrhu musí být jejich místa a proklik.
+
+---
+
+## Copywriting (použij jako finální texty v návrhu)
+
+### Hero
+
+H1: Fixované ceny energií bez starostí
+Text: Pomůžeme vám získat výhodnou fixaci elektřiny nebo plynu. Jednoduše, přehledně a bez zbytečné administrativy.
+CTA: Získat nabídku
+Secondary: Jak to funguje
+Microcopy: Zdarma a nezávazně • Nabídka do 24 hodin • Ověření partneři
+
+### Value proposition
+
+Headline: Výhodné energie bez složitého hledání
+Text: Trh s energiemi je nepřehledný. My pro vás vyjednáme výhodné podmínky a pomůžeme vám vybrat nabídku, která dává smysl.
+
+### Final CTA
+
+Headline: Zjistěte, kolik můžete ušetřit na energiích
+CTA: Získat nabídku zdarma
+
+Tone: lidský, stručný, bez žargonu.
+
+---
+
+## Design system (povinné)
+
+Vytvoř stránku “Design System”:
+
+* Color tokens (primary/secondary/neutral/success/warning + hover/active)
+* Typography scale (H1/H2/H3/body/small)
+* Spacing scale (4/8/12/16/24/32/48/64…)
+* Grid & breakpoints (desktop/tablet/mobile)
+* Shadows & radius tokens
+* Components (variants + states):
+
+  * Buttons (primary/secondary/ghost + hover/active/disabled/loading)
+  * Inputs (default/focus/error/success/disabled)
+  * Tabs/chips (FO/FOP/PO, energie)
+  * Cards (benefit, segment, testimonial)
+  * Navbar (sticky)
+  * Footer
+  * Accordion (FAQ)
+  * Badges/pills
+  * Form stepper/progress
+  * Sticky CTA bar (desktop + mobile)
+
+---
+
+## Prototyp (povinné flows)
+
+Klikací prototyp musí obsahovat:
+
+* anchor navigaci v headeru
+* scroll do sekcí
+* přepnutí segmentů FO/FOP/PO (mění copy v kalkulačce)
+* otevření multi-step kalkulačky z Hero CTA a ze sticky CTA
+* průchod kroky formuláře až na “Děkujeme” stav (thank-you screen)
+* prokliky na povinné dokumenty v footeru (mohou být jako jednoduché modální stránky / prototypové frames)
+
+---
+
+## Quality benchmark
+
+Navrhni design na úrovni moderních SaaS landing pages (Stripe/Vercel/Linear/Notion) + zachovej marketplace/partner vibe jako reference screenshot.
+
+Důraz:
+
+* maximální konverze
+* maximální completion rate
+* ultra přehledné UX
+* moderní, důvěryhodný vzhled
+* připraveno na vývoj
+
+---
+
+## Extra: “Thank you” screen (pro conversion loop)
+
+Po odeslání formuláře navrhni potvrzovací stav:
+
+* “Děkujeme — ozveme se do 24 hodin.”
+* “Co bude dál” (3 kroky)
+* sekundární CTA: “Prozkoumat ekosystém DOMIDOMI”
+
+---
+
+Chceš to ještě „o level výš“ i prakticky?
+Můžu ti do promptu doplnit **konkrétní UI tokeny podle reference** (přesné radius/shadow/spacing), a taky **2 varianty hero** (A/B) pro ještě vyšší konverzi — ale i bez toho je tohle už nastavené na absolutní strop.
