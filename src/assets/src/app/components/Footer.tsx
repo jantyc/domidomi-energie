@@ -26,13 +26,13 @@ export function Footer() {
               </div>
               <div className="flex items-center gap-3 text-white/60">
                 <Phone size={15} className="shrink-0" />
-                <a href="tel:+420800123456" className="hover:text-white transition-colors" style={{ fontSize: "14px" }}>
-                  +420 800 123 456
+                <a href="tel:+420226223819" className="hover:text-white transition-colors" style={{ fontSize: "14px" }}>
+                  226 223 819
                 </a>
               </div>
               <div className="flex items-center gap-3 text-white/60">
                 <MapPin size={15} className="shrink-0" />
-                <span style={{ fontSize: "14px" }}>Praha, Česká republika</span>
+                <span style={{ fontSize: "14px" }}>Kaprova 42/14, Staré Město, 110 00 Praha</span>
               </div>
             </div>
           </div>
@@ -94,18 +94,20 @@ export function Footer() {
             <p className="text-white mb-4" style={{ fontSize: "15px", fontWeight: 600 }}>Dokumenty</p>
             <ul className="flex flex-col gap-2.5">
               {[
-                { label: "GDPR — Ochrana osobních údajů", href: "#gdpr" },
-                { label: "Etický kodex", href: "#eticky-kodex" },
-                { label: "Informace o zprostředkovateli", href: "#zprostredkovatel" },
-                { label: "Reklamační řád", href: "#reklamacni-rad" },
-                { label: "Obchodní podmínky", href: "#" },
-                { label: "Cookies", href: "#" },
+                { label: "GDPR — Ochrana osobních údajů", href: "/energie/legal/gdpr.pdf" },
+                { label: "Etický kodex", href: "/energie/legal/eticky-kodex.pdf" },
+                { label: "Informace o zprostředkovateli", href: "/energie/legal/informace-o-zprostredkovateli.pdf" },
+                { label: "Reklamační řád", href: "/energie/legal/reklamacni-rad.pdf" },
+                { label: "Licence ERU — registr zprostředkovatelů", href: "https://eru.gov.cz/registr-zprostredkovatelu/742644369" },
+                { label: "Doklad o licenci ERU", href: "/energie/legal/licence-eru.pdf" },
               ].map((link) => (
                 <li key={link.label}>
                   <a
                     href={link.href}
                     className="text-white/60 hover:text-white transition-colors"
                     style={{ fontSize: "14px" }}
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     {link.label}
                   </a>
