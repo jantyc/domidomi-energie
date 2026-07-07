@@ -406,7 +406,7 @@ export function Calculator({ isModal = false, onClose }: CalculatorProps) {
                 </div>
                 <span className="text-[#6B7280]" style={{ fontSize: "13px" }}>
                   Souhlasím se{" "}
-                  <a href="#gdpr" className="text-[#E30A1A] hover:underline">zpracováním osobních údajů</a>
+                  <a href="/energie/legal/gdpr.pdf" target="_blank" rel="noopener noreferrer" className="text-[#E30A1A] hover:underline">zpracováním osobních údajů</a>
                   {" "}(GDPR) a zasíláním obchodních sdělení. Svůj souhlas mohu kdykoli odvolat.
                 </span>
               </label>
